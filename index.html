@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modern-normalize.css">
+</head>
+<body>
+    <header>
+        <h1>TicTacToe</h1>
+    </header>
+    
+
+
+    <form>
+        <label for="player1">Player 1 (starts):</label>
+        <input type="text" id = "player1" value = "X">
+        <label for="player2">Player 2:</label>
+        <input type="text" id = "player2" value = "O">
+    </form>
+
+    <main>
+        <div class = "buttonContainer">
+            <button type = "button" class = "gamefieldButton"></button>
+            <button type = "button" class = "gamefieldButton colorbutton"></button>
+            <button type = "button" class = "gamefieldButton"></button>
+            <button type = "button" class = "gamefieldButton colorbutton"></button>
+            <button type = "button" class = "gamefieldButton"></button>
+            <button type = "button" class = "gamefieldButton colorbutton"></button>
+            <button type = "button" class = "gamefieldButton"></button>
+            <button type = "button" class = "gamefieldButton colorbutton"></button>
+            <button type = "button" class = "gamefieldButton"></button>
+        </div>
+        
+        <div class="wins">
+            <span class="player1 player">
+                <h3 class = "name1">Wins Player </h3>
+                <p class = "player1counter">0</p>
+            </span>
+            <span class="player2 player">
+                <h3 class = "name2">Wins Player </h3>
+                <p class = "player2counter">0</p>
+            </span>
+        </div>
+
+    </main>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

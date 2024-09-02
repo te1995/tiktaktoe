@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonContainer {
+    flex-grow: 1;
+    min-width: 30vw;
+    min-height: 30vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.wins {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.gamefieldButton {
+    font-size: 4rem;
+}
+
+header {
+    background-color: #7C00FE;
+    width: 100%;
+    text-align: center;
+}
+
+.name1::after {
+    content: var(--after-content, "X");
+}
+
+.name2::after {
+    content: var(--after-content, "O");
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.player {
+    box-shadow: 2px 2px 2px 2px #edddff;
+    padding: 10px;
+}
+
+input {
+    text-align: center;
+}
+
+.colorbutton {
+    background-color: #F9E400;
+}
+
+.colorbutton:hover {
+    background-color: #fff585;
+}
